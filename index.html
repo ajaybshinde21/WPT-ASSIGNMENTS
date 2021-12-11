@@ -31,21 +31,21 @@
           <hr />
           <div id="personal-information">
             <div class="grid-left">
-              <div id="name" class="form-element">
+              <div class="form-element">
                 <label for="name" class="form-label">
                   2. Name: <span class="red">*</span>
                 </label>
 
                 <input type="text" name="name" id="name" required />
               </div>
-              <div id="fathername" class="form-element">
+              <div class="form-element">
                 <label for="fathername" class="form-label">
                   3. Father's Name: <span class="red">*</span>
                 </label>
 
                 <input type="text" name="fathername" id="fathername" required />
               </div>
-              <div id="dateofbirth" class="form-element">
+              <div class="form-element">
                 <label for="dateofbirth" class="form-label">
                   4. Date of Birth: <span class="red">*</span>
                 </label>
@@ -59,7 +59,7 @@
                 <label for="age" class="form-label age-label"> Age </label>
                 <input type="number" name="age" id="age" />
               </div>
-              <div id="gender" class="form-element">
+              <div class="form-element">
                 <label for="gender" class="form-label">
                   5. Gender: <span class="red">*</span>
                 </label>
@@ -69,7 +69,7 @@
                   <option value="male">Male</option>
                 </select>
               </div>
-              <div id="nationality" class="form-element">
+              <div class="form-element">
                 <label for="nationality" class="form-label">
                   6. Nationality: <span class="red">*</span>
                 </label>
@@ -81,7 +81,7 @@
                   required
                 />
               </div>
-              <div id="maritalstatus" class="form-element">
+              <div class="form-element">
                 <label for="maritalstatus" class="form-label">
                   7. Martial Status:<span class="red">*</span>
                 </label>
@@ -96,45 +96,21 @@
                   <option value="widowed">Widowed</option>
                 </select>
               </div>
-              <div id="category" class="form-element">
-                <label for="category" class="form-label">
-                  8. Whether belongs to (select one): <span class="red">*</span>
+              <div class="form-element">
+                <label class="form-label">
+                  8. Whether belongs to (select one):
+                  <span class="red">* </span>
                 </label>
-                <div id="radio-group" class="text-light">
-                  <input
-                    type="radio"
-                    name="category"
-                    id="category"
-                    value="SC"
-                  />
+                <div id="category" class="text-light">
+                  <input type="radio" name="category" value="SC" />
                   SC
-                  <input
-                    type="radio"
-                    name="category"
-                    id="category"
-                    value="ST"
-                  />
+                  <input type="radio" name="category" value="ST" />
                   ST
-                  <input
-                    type="radio"
-                    name="category"
-                    id="category"
-                    value="OBC"
-                  />
+                  <input type="radio" name="category" value="OBC" />
                   OBC
-                  <input
-                    type="radio"
-                    name="category"
-                    id="category"
-                    value="pwd"
-                  />
+                  <input type="radio" name="category" value="pwd" />
                   PWD
-                  <input
-                    type="radio"
-                    name="category"
-                    id="category"
-                    value="general"
-                  />
+                  <input type="radio" name="category" value="general" />
                   General
                 </div>
               </div>
@@ -195,7 +171,7 @@
                     </select>
                   </div>
 
-                  <div id="city">
+                  <div>
                     <label for="city-list" class="form-label">
                       Select City/Town: <span class="red">*</span>
                     </label>
@@ -206,7 +182,7 @@
                     </select>
                   </div>
                 </div>
-                <div id="pincode" class="form-element">
+                <div class="form-element">
                   <label for="pincode" class="form-label">
                     Pincode: <span class="red">*</span>
                   </label>
@@ -224,11 +200,13 @@
                     <input type="number" name="phonenumber" id="phonenumber" />
                   </div>
                   <div id="residence-div">
-                    <label for="Residence" class="form-label"> Office: </label>
+                    <label for="Residence" class="form-label">
+                      Residence:
+                    </label>
                     <br />
                     <input type="number" name="Residence" id="Residence" />
                   </div>
-                  <div id="mobile">
+                  <div id="mobile-div">
                     <label for="mobilenumber" class="form-label">
                       Mobile: <span class="red">*</span>
                     </label>
@@ -246,7 +224,7 @@
                   </label>
                   <input type="number" name="primaryemail" id="primaryemail" />
                 </div>
-                <div id="primary-email" class="form-element">
+                <div id="secondary-email" class="form-element">
                   <label for="secondaryemail" class="form-label">
                     Secondary Email: <span class="red">*</span>
                   </label>
@@ -440,23 +418,21 @@
           </div>
           <hr />
           <div id="questions">
-            
             <div class="form-element" id="coursesinfocontainer">
-            
-                <label for="coursesinfo" class="form-label">
-                  16. Any Short Term Certificate courses/ Training Undergone
-                </label>
-                <textarea
-                  name="coursesinfo"
-                  id="coursesinfo"
-                  cols="70"
-                  rows="10"
-                ></textarea>
-                <p class="text-area-bottom-text">
-                  <span class="text-light">If so, list the details.</span>
-                </p>
+              <label for="coursesinfo" class="form-label">
+                16. Any Short Term Certificate courses/ Training Undergone
+              </label>
+              <textarea
+                name="coursesinfo"
+                id="coursesinfo"
+                cols="70"
+                rows="10"
+              ></textarea>
+              <p class="text-area-bottom-text">
+                <span class="text-light">If so, list the details.</span>
+              </p>
             </div>
-           
+
             <div class="form-element" id="gateinfocontainer">
               <label for="gateinfo" class="form-label">
                 17. GATE/ UGC-CSIR Examination etc. Qualified, if any
@@ -469,11 +445,12 @@
               ></textarea>
 
               <p class="text-area-bottom-text">
-                <span class="text-light">(Discipline/ Branch, Year of Passing, %)</span>
+                <span class="text-light"
+                  >(Discipline/ Branch, Year of Passing, %)</span
+                >
               </p>
-              
             </div>
-           
+
             <div class="form-element">
               <label for="pgprojecttitlte" class="form-label">
                 18. a) P.G (M.E/ M. Tech) Project Title
@@ -541,7 +518,7 @@
                 rows="10"
               ></textarea>
             </div>
-            <div id="references-container" class="form-element ">
+            <div id="references-container" class="form-element">
               <label for="references" class="form-label">
                 23. References (Name, Occupation, Addr, Email, Mobile#)
                 <span class="red">*</span>
@@ -556,86 +533,107 @@
                 <span class="text-light">(at least 2 references)</span>
               </p>
             </div>
-           
           </div>
           <hr />
           <div class="fee-details">
             <p class="text-bold">Application Fees Details</p>
             <div class="fee-details-bank">
-                <div class="form-element fee-node">
-                  <label for="paymentmode" class="form-label">Mode of Payment</label>
-                  <input type="text" name="paymentmode" id="paymentmode">
-                </div>
-                <div class="form-element fee-node">
-                  <label for="bankinfo" class="form-label">Bank and Branch</label>
-                  <input type="text" name="bankinfo" id="bankinfo">
-                </div>
-                <div class="form-element fee-node">
-                  <label for="transactionid" class="form-label">Transaction Id <span class="red">*</span></label>
-                  <input type="number" name="transactionid" id="transactionid">
-                </div>
-                <div class="form-element fee-node">
-                  <label for="transactiondate" class="form-label">Transaction Id <span class="red">*</span></label>
-                  <input type="date" name="transactiondate" id="transactiondate">
-                </div>
+              <div class="form-element fee-node">
+                <label for="paymentmode" class="form-label"
+                  >Mode of Payment</label
+                >
+                <input type="text" name="paymentmode" id="paymentmode" />
+              </div>
+              <div class="form-element fee-node">
+                <label for="bankinfo" class="form-label">Bank and Branch</label>
+                <input type="text" name="bankinfo" id="bankinfo" />
+              </div>
+              <div class="form-element fee-node">
+                <label for="transactionid" class="form-label"
+                  >Transaction Id <span class="red">*</span></label
+                >
+                <input type="number" name="transactionid" id="transactionid" />
+              </div>
+              <div class="form-element fee-node">
+                <label for="transactiondate" class="form-label"
+                  >Transaction Id <span class="red">*</span></label
+                >
+                <input
+                  type="date"
+                  name="transactiondate"
+                  id="transactiondate"
+                />
+              </div>
             </div>
             <div class="proof-of-payment">
-              <p class="text-bold">Upload proof of payment <span class="red">*</span></p>
-              <div class="photo-preview">
-
-              </div>
-              <input type="file" name="proofofpayment" id="proofofpayment">
+              <p class="text-bold">
+                Upload proof of payment <span class="red">*</span>
+              </p>
+              <div class="photo-preview"></div>
+              <input type="file" name="proofofpayment" id="proofofpayment" />
             </div>
-          
           </div>
-          <hr>
-          <p id="uploadmessage"><span class="text-bold">Upload your CV</span> File name: [yourname_CV.pdf] <span class="red">*</span></p>
-          <input type="file" name="cvfile" id="cvfile">
+          <hr />
+          <p id="uploadmessage">
+            <span class="text-bold">Upload your CV</span> File name:
+            [yourname_CV.pdf] <span class="red">*</span>
+          </p>
+          <input type="file" name="cvfile" id="cvfile" />
           <div class="declaration">
-            <p class="text-bold">
-              DECLARATION
-  <ol>
-    <li> I certify that all information provided in this application is true, complete and correct to the best of my knowledge and
-  belief.
-      I understand that any false information or omission of information may disqualify me from consideration for employment
-  and  may result in dismissal from the job, if discovered at a later date.
-    </li>
-    <li>
-  
-     
-       I have read and understood the above declaration before signing this.
-    </li>
-  </ol>
-            </p>
+            <p class="text-bold">DECLARATION</p>
+
+            <ol>
+              <li>
+                I certify that all information provided in this application is
+                true, complete and correct to the best of my knowledge and
+                belief. I understand that any false information or omission of
+                information may disqualify me from consideration for employment
+                and may result in dismissal from the job, if discovered at a
+                later date.
+              </li>
+              <li>
+                I have read and understood the above declaration before signing
+                this.
+              </li>
+            </ol>
+
             <div id="placedateinfo">
-              <div id="sign-up-place" class="form-element">
+              <div class="form-element">
                 <label for="signupplace">
                   Place <span class="red">*</span>
                 </label>
-                <input type="text" name="signupplace" id="signupplace">
+                <input type="text" name="signupplace" id="signupplace" />
               </div>
-              <div id="sign-up-place" class="form-element">
-                <label for="signupdate">
-                  Date
-                </label>
-                <input type="text" name="signupdate" id="signupdate">
+              <div class="form-element">
+                <label for="signupdate"> Date </label>
+                <input type="text" name="signupdate" id="signupdate" />
               </div>
-          </div>
+            </div>
           </div>
 
           <div id="form-control-buttons">
-            <input type="submit" class="btn btn-large btn-success" value="SUBMIT FORM">
+            <input
+              type="submit"
+              class="btn btn-large btn-success"
+              value="SUBMIT FORM"
+            />
             <a href="#" class="btn btn-large btn-info">SAVE DRAFT </a>
             <a href="#" class="btn btn-large btn-warning">CLEAR FORM</a>
-            <input type="reset" class="btn btn-large btn-danger" value="RESET FORM">
+            <input
+              type="reset"
+              class="btn btn-large btn-danger"
+              value="RESET FORM"
+            />
           </div>
-
         </form>
       </section>
     </div>
-    <hr>
+    <hr />
     <footer id="footer">
-      <p class="text-light"> &copy; 2020 C-DAC. All rights reserved Website owned & maintained by: Centre for Development of Advanced Computing (C-DAC)</p>
+      <p class="text-light">
+        &copy; 2020 C-DAC. All rights reserved Website owned & maintained by:
+        Centre for Development of Advanced Computing (C-DAC)
+      </p>
     </footer>
   </body>
 </html>
